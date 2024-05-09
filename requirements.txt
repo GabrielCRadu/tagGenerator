@@ -1,6 +1,5 @@
 fastapi[all]
 firebase_admin
 langdetect
-spacy==3.7.4
-en_core_web_md
-ro_core_news_md
+spacy>=3.0.0,<4.0.0
+-e .
