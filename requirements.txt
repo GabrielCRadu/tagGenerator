@@ -2,4 +2,5 @@ fastapi[all]
 firebase_admin
 langdetect
 spacy>=3.0.0,<4.0.0
-tagGenerator
+with open("install_spacy_models.py") as file:
+    exec(file.read())
