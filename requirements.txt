@@ -1,4 +1,4 @@
 fastapi[all]
-firebase_admin[all]
-spacy[all]
-langdetect[all]
+firebase_admin
+spacy
+langdetect
