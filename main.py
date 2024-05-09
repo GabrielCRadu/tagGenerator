@@ -10,11 +10,6 @@ from fastapi.middleware.cors import CORSMiddleware
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-import subprocess
-
-# Rulați scriptul de instalare a modelelor SpaCy
-subprocess.run(["python", "install_spacy_models.py"])
-
 # Originile permise pentru CORS
 origins = [
     "https://kreateapp.com",
