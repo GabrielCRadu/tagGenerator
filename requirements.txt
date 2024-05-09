@@ -1,1 +1,6 @@
 fastapi[all]
+firebase_admin[all]
+re[all]
+spacy[all]
+collections[all]
+langdetect[all]
