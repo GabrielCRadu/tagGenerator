@@ -1,5 +1,11 @@
-import spacy.cli
+import subprocess
 
-# Descărcați și instalați modelele lingvistice
-spacy.cli.download("en_core_web_md")
-spacy.cli.download("ro_core_news_md")
+# Defineți comenzile pentru descărcarea modelelor SpaCy pentru limba engleză și română
+commands = [
+    "python -m spacy download en_core_web_md",
+    "python -m spacy download ro_core_news_md"
+]
+
+# Rulați fiecare comandă folosind subprocess
+for command in commands:
+    subprocess.run(command, shell=True)
