@@ -2,5 +2,5 @@ fastapi[all]
 firebase_admin
 spacy==3.7.4
 langdetect
-spacy download en_core_web_md
-spacy download ro_core_news_md
+-m spacy download en_core_web_md
+-m spacy download ro_core_news_md
