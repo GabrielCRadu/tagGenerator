@@ -1,6 +1,5 @@
 fastapi[all]
 firebase_admin[all]
-re
 spacy[all]
 collections[all]
 langdetect[all]
