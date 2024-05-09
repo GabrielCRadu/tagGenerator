@@ -1,5 +1,4 @@
 fastapi[all]
 firebase_admin
 langdetect
-spacy>=3.0.0,<4.0.0
-install_spacy_models.py"
+spacy==3.7.4
