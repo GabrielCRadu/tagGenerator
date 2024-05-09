@@ -1,4 +1,4 @@
 fastapi[all]
 firebase_admin
-spacy
+spacy==3.7.4
 langdetect
