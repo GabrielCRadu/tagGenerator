@@ -79,6 +79,11 @@ def clean_text(text):
     cleaned_text = re.sub(r"[^\w\s]", "", text)
     return cleaned_text
 
+
+@app.get("/")
+async def index():
+    return {"Server has woken up"}
+
 # Definirea endpoint-ului API pentru obținerea tag-urilor și actualizarea listei post_tags
 @app.get("/getTags/{user_id}/{post_id}/{tagsCount}")
 async def get_tags(user_id: str, post_id: str, tagsCount: int):
@@ -108,8 +113,3 @@ async def get_tags(user_id: str, post_id: str, tagsCount: int):
     
     # Returnează rezultatul
     return {"success": True, "tags": filtered_tags}
-
-@app.get("/wake")
-async def wake_server():
-    # Aici puteți adăuga orice cod pe care doriți să îl rulați când endpoint-ul este accesat
-    return {"message": "Server has woken"}
