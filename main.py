@@ -1,7 +1,6 @@
 import re
 import spacy
 from collections import Counter
-from spacy.lang.en.stop_words import STOP_WORDS
 from langdetect import detect
 
 from fastapi import FastAPI, HTTPException
@@ -109,3 +108,8 @@ async def get_tags(user_id: str, post_id: str, tagsCount: int):
     
     # Returnează rezultatul
     return {"success": True, "tags": filtered_tags}
+
+@app.get("/wake")
+async def wake_server():
+    # Aici puteți adăuga orice cod pe care doriți să îl rulați când endpoint-ul este accesat
+    return {"message": "Server has woken"}
