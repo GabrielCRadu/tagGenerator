@@ -19,8 +19,10 @@ Un microserviciu/back‑end/tool care generează automat tag-uri relevante pentr
 
 1. Primește un document (text brut) sau descriere asociată unui conținut  
 2. Preprocesează textul: tokenizare, eliminare stop-words  
-3. Calculează TF-IDF și selectează cele mai semnificative cuvinte  
+3. Calculează TF-IDF* și selectează cele mai semnificative cuvinte  
 4. Returnează un set de N tag-uri
+
+*TF-IDF scoate în evidență cuvintele specifice unui text, ignorând cuvintele comune (gen „este”, „și”, „în”, „the”, „is”)
 
 ---
 
