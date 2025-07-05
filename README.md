@@ -1,7 +1,7 @@
 
 # 🏷️ tagGenerator for KREATE
 
-Un microserviciu/back‑end/tool care generează automat tag-uri relevante pentru conținut (postări, imagini, text) în aplicația **KREATE**, bazat pe TF-IDF și NLP.
+Un microserviciu/back‑end/tool care generează automat tag-uri relevante pentru conținut (postări, imagini, text) în aplicația **KREATE**.
 
 ---
 
@@ -79,12 +79,6 @@ Acoperă cazuri tipice, generare pentru texte română/engleză și filtrare dia
 |----------------------------------------------|------------------------------------|
 | `"Astăzi am vorbit despre inteligență artificială și machine learning"` | ["inteligență", "artificială", "machine", "learning"] |
 | `"Festival de muzică, concerte și artă"`     | ["festival", "muzică", "concerte", "artă"] |
-
----
-
-## 🧩 Contribuții
-
-Contribuțiile sunt binevenite! Pentru bug reports sau feature requests, deschide un *issue*. Pull requests sunt apreciate.
 
 ---
 
