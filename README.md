@@ -84,18 +84,6 @@ Acoperă cazuri tipice, generare pentru texte română/engleză și filtrare dia
 
 ---
 
-## 📝 Licență
-
-Licență MIT – vezi fișierul `LICENSE`.
-
----
-
-## 📩 Contact
-
-- **Gabriel Radu** – dezvoltator principal – radugabriel796@gmail.com  
-- Modul integrat în aplicația **KREATE**
-
----
 
 ## ⚙️ Roadmap / Direcții viitoare
 
