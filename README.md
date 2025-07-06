@@ -26,55 +26,6 @@ Un microserviciu/back‑end/tool care generează automat tag-uri relevante pentr
 
 ---
 
-## 🚀 Instalare & Utilizare
-
-### Clonare
-```bash
-git clone https://github.com/GabrielCRadu/tagGenerator.git
-cd tagGenerator
-```
-
-### Instalare dependențe
-Proiectul este scris în **Python**. Instalează dependențele:
-```bash
-pip install -r requirements.txt
-```
-
-### Exemple de rulare
-#### CLI:
-```bash
-python tagGenerator.py --input "Acesta este textul pe care vrei să-l tag‑ezi" --num-tags 5
-```
-
-#### Ca modul Python:
-```python
-from tagGenerator import TagGenerator
-
-tg = TagGenerator()
-tags = tg.generate("Un exemplu de conținut pentru tag generator", 5)
-print(tags)  # ex: ['exemplu', 'tag', 'generator', ...]
-```
-
----
-
-## 🛠️ Configurații
-
-- `--num-tags`: numărul de tag-uri de returnat (implicit: 5)  
-- `--language`: specifică limba pentru stop‑words (ex: ro, en)  
-- Alte opțiuni: praguri TF-IDF, regex, normalizare, etc.
-
----
-
-## 🧪 Testare
-
-```bash
-pytest tests/
-```
-
-Acoperă cazuri tipice, generare pentru texte română/engleză și filtrare diacritice.
-
----
-
 ## 🌱 Exemple
 
 | Intrare                                      | Output (tags)                      |
@@ -91,7 +42,14 @@ Acoperă cazuri tipice, generare pentru texte română/engleză și filtrare dia
 - Model semantic (Word2Vec/Transformers) în loc de TF-IDF  
 - API RESTful pentru integrare directă în backend  
 
+## 👨‍💻 Autori
+- rest API scris de **Radu Gabriel Claudiu**
 
+  rol in cadrul aplicației KREATE:
+- **Radu Gabriel Claudiu** – backend, frontend, etc.
+- **Trîmbițaș George Bogdan** – interfață grafică, meniuri, testare
+
+---
 
 # Deploy FastAPI on Render
 
